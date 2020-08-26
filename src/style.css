@@ -9,7 +9,12 @@ img{max-width: 100%;
 }
 
 /* style */
-body{background: #eee;}
+body{
+    background: #eee;
+    background-image: url(./images/wm1.jpg) ;
+  
+    background-size: cover;
+}
 
 .globalHeader{ 
     margin:20px ;  
@@ -37,8 +42,11 @@ body{background: #eee;}
     margin-right:10px;
     height: 40px;
     padding:0 10px;
-    border:1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+.searchForm > input:hover{
+    opacity: 1;
 }
 .searchForm > button{
     white-space: nowrap;
@@ -48,6 +56,7 @@ body{background: #eee;}
     background: #3F7AED;
     color:white;
     font-size: 18px;
+    
 }
 
 .globalMain{
@@ -80,6 +89,7 @@ body{background: #eee;}
     }
 }
 .siteList .site{
+    
     width: 160px;
     display: flex;
     justify-content: center;
@@ -90,6 +100,10 @@ body{background: #eee;}
     padding:20px 0;
     position: relative;
     cursor: pointer;
+    opacity: 0.4;
+}
+.siteList .site:hover{
+    opacity: 1;
 }
 .siteList .site > .logo{
     width: 64px;
@@ -121,6 +135,10 @@ body{background: #eee;}
     align-items:center;
     flex-direction: column;
     padding:20px 0;
+    opacity: 0.4;
+}
+.siteList .addButton:hover{
+    opacity: 1;
 }
 .siteList .addButton .icon{
     width:60px;
